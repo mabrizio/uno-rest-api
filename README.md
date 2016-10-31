@@ -24,3 +24,22 @@ uno.rb hands
 ```bash
 uno.rb clear
 ```
+
+## Elastic Beanstalk
+
+This application can be deployed into AWS Elastic Beanstal, to do that, run the following command:
+
+```bash
+zip -r app-$(date +"%Y%m%d%H%M").zip Gemfile* app.rb config.ru server.rb
+```
+
+Before using the uno client, you have to export the `api_url` environment variable:
+
+```bash
+export api_url='http://your-public-dns-record/api-path' # if using HTTP
+```
+or
+
+```bash
+export api_url='https://your-public-dns-record/api-path' # if using HTTPS
+```
