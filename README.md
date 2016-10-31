@@ -27,7 +27,7 @@ uno.rb clear
 
 ## Elastic Beanstalk
 
-This application can be deployed into AWS Elastic Beanstal, to do that, run the following command:
+This application can be deployed into AWS Elastic Beanstal, to do that, run the following command and deploy the resulting zip file:
 
 ```bash
 zip -r app-$(date +"%Y%m%d%H%M").zip Gemfile* app.rb config.ru server.rb
