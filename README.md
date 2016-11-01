@@ -30,7 +30,7 @@ uno.rb clear
 This application can be deployed into AWS Elastic Beanstal, to do that, run the following command to generate a deploying package:
 
 ```bash
-zip -r app-$(date +"%Y%m%d%H%M").zip Gemfile* app.rb config.ru server.rb
+zip -r app_$(date +"%Y%m%d%H%M").zip Gemfile* app.rb config.ru server.rb
 ```
 
 Before using the uno client, you have to export the `api_url` environment variable:
